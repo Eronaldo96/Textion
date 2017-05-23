@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Textion</string>
+    <string name="logar">Logar</string>
+    <string name="criar_conta">Criar Conta</string>
+    <string name="senha">Senha:</string>
+    <string name="email">Email:</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="nome">Nome:</string>
+    <string name="criar_texto">Criar Texto</string>
+    <string name="ver">ver</string>
+    <string name="biblioteca_de_textos">Biblioteca de textos</string>
+    <string name="pesquisar_texto">Pesquisar Texto:</string>
+    <string name="minimum_password">Mínimo 6 caracteres</string>
+    <string name="auth_failed">Falha na Autenticação</string>
+</resources>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1066828406213",
+    "firebase_url": "https://textion-28ac1.firebaseio.com",
+    "project_id": "textion-28ac1",
+    "storage_bucket": "textion-28ac1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1066828406213:android:670288a37c6847d0",
+        "android_client_info": {
+          "package_name": "com.example.erona.textion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1066828406213-18gsq9e90imun3fmvsui0k5evf2k8jdr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmxQbRxB55ZRDLVJhQy6CPGxxNp_0AYIg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
