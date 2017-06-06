@@ -42,30 +42,30 @@ public class HomeActivity extends AppCompatActivity {
         btVerLivros.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick (View v){
-                //vai para a tela de login
+                //vai para tela de biblioteca
                 Intent TelaBiblioteca = new Intent(getApplicationContext(), BibliotecaActivity.class);
                 startActivity(TelaBiblioteca);
-                //     finish();
+                finish();
             }
         });
 
         btCriarTexto.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick (View v){
-                //vai para a tela de login
+                //vai para a tela de edição
                 Intent TelaCriarTexto = new Intent(getApplicationContext(), EditorTextActivity.class);
                 startActivity(TelaCriarTexto);
-                //     finish();
+                finish();
             }
         });
 
         btNovidades.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick (View v){
-                //vai para a tela de login
+                //vai para a tela de publicação
                 Intent TelaNovidades = new Intent(getApplicationContext(), PublicacoesActivity.class);
                 startActivity(TelaNovidades);
-                //     finish();
+                finish();
             }
         });
 

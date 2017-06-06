@@ -23,6 +23,13 @@
                 android:layout_height="wrap_content"
                 android:text="TextView"
                 android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btHome"
+                android:layout_width="357dp"
+                android:layout_height="wrap_content"
+                android:text="Home" />
+
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

@@ -110,7 +110,7 @@ public class BibliotecaActivity extends AppCompatActivity {
         btHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent telaHome = new Intent(getApplicationContext(),HomeActivity.class);
+                Intent telaHome = new Intent(getApplicationContext(),HomePrincipalActivity.class);
                 startActivity(telaHome);
             }
         });

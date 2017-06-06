@@ -39,9 +39,9 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginTop="58dp"
                 android:layout_weight="0.09"
-                android:background="@color/colorAccent"
+                android:background="@color/common_google_signin_btn_text_dark_default"
                 android:ems="10"
-                android:hint="@string/email"
+                android:hint="Email"
                 android:inputType="textEmailAddress"
                 android:textSize="40sp" />
 
@@ -54,9 +54,9 @@
                 android:layout_marginTop="52dp"
 
                 android:layout_weight="0.09"
-                android:background="@color/colorAccent"
+                android:background="@color/common_google_signin_btn_text_dark_default"
                 android:ems="10"
-                android:hint="@string/senha"
+                android:hint="Senha"
                 android:inputType="textPassword"
                 android:textSize="40sp" />
 
