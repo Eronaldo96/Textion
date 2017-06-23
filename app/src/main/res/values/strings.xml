@@ -36,4 +36,9 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="create_account">Create Account</string>
+    <string name="login">Login</string>
+    <string name="cadastro">Cadastro</string>
+    <string name="name">Name</string>
+    <string name="redefinir_senha">Redefinir Senha</string>
 </resources>

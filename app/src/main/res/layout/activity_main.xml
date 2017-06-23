@@ -21,5 +21,6 @@
         android:minHeight="155dp"
         android:minWidth="155dp"
         android:visibility="visible"
-        app:srcCompat="@android:color/transparent" />
+        app:srcCompat="@android:color/transparent"
+        tools:ignore="ContentDescription" />
 </RelativeLayout>

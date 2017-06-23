@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.widget.SearchView;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -20,6 +21,7 @@ public class HomeActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
     private DatabaseReference mDatabaseReference;
+    private ProgressBar pbLoading;
     //public SearchView svPesquisar;
 
 
@@ -33,6 +35,7 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        pbLoading = (ProgressBar) findViewById(R.id.pbLoading);
         btVerLivros = (Button)findViewById(R.id.btVerLivros);
         btCriarTexto = (Button)findViewById(R.id.btCriarTexto);
         btNovidades = (Button)findViewById(R.id.btNovidades);
@@ -42,6 +45,15 @@ public class HomeActivity extends AppCompatActivity {
         btVerLivros.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick (View v){
+
+                pbLoading.setVisibility(View.VISIBLE);
+
+                try {
+                    Thread.sleep(300);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
                 //vai para tela de biblioteca
                 Intent TelaBiblioteca = new Intent(getApplicationContext(), BibliotecaActivity.class);
                 startActivity(TelaBiblioteca);
@@ -52,6 +64,15 @@ public class HomeActivity extends AppCompatActivity {
         btCriarTexto.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick (View v){
+
+                pbLoading.setVisibility(View.VISIBLE);
+
+                try {
+                    Thread.sleep(300);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
                 //vai para a tela de edição
                 Intent TelaCriarTexto = new Intent(getApplicationContext(), EditorTextActivity.class);
                 startActivity(TelaCriarTexto);
@@ -62,8 +83,17 @@ public class HomeActivity extends AppCompatActivity {
         btNovidades.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick (View v){
+
+                pbLoading.setVisibility(View.VISIBLE);
+
+                try {
+                    Thread.sleep(300);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
                 //vai para a tela de publicação
-                Intent TelaNovidades = new Intent(getApplicationContext(), PublicacoesActivity.class);
+                Intent TelaNovidades = new Intent(getApplicationContext(), PublicaTextoActivity.class);
                 startActivity(TelaNovidades);
                 finish();
             }
@@ -72,6 +102,14 @@ public class HomeActivity extends AppCompatActivity {
         btSair.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick (View v){
+
+                pbLoading.setVisibility(View.VISIBLE);
+
+                try {
+                    Thread.sleep(300);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
 
                 mAuth.signOut();
                 Toast.makeText(getApplicationContext(),"saiu",Toast.LENGTH_SHORT).show();

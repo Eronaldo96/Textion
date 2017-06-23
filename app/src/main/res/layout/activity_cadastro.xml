@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?attr/colorControlHighlight"
+    android:background="@android:color/white"
     android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -15,7 +15,8 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -30,7 +31,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center_horizontal"
                 android:layout_weight="0.08"
-                android:text="         Cadastro"
+                android:text="@string/cadastro"
                 android:textColor="#fe0202"
                 android:textSize="40sp" />
 
@@ -38,48 +39,30 @@
                 android:id="@+id/etNome"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/textView4"
-                android:layout_marginTop="40dp"
                 android:layout_weight="0.08"
-                android:background="@color/colorAccent"
                 android:ems="10"
-                android:hint="Nome:"
-                android:inputType="textPersonName"
-                android:textColor="?attr/colorControlNormal"
-                android:textColorHint="?attr/colorControlNormal"
-                android:textSize="30sp" />
+                android:hint="@string/name"
+                android:inputType="textPersonName" />
 
             <EditText
                 android:id="@+id/etEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/etNome"
                 android:layout_weight="0.08"
-                android:background="@color/colorAccent"
                 android:ems="10"
-                android:hint="Email:"
+                android:hint="Email"
                 android:inputType="textEmailAddress"
-                android:textColorHint="?attr/colorControlNormal"
-                android:textSize="30sp" />
+                tools:ignore="HardcodedText" />
 
             <EditText
                 android:id="@+id/etSenha"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/etEmail"
                 android:layout_weight="0.08"
-                android:background="@color/colorAccent"
                 android:ems="10"
-                android:hint="Senha:"
+                android:hint="Password"
                 android:inputType="textPassword"
-                android:textColorHint="?attr/colorControlNormal"
-                android:textSize="30dp" />
+                tools:ignore="HardcodedText" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -97,23 +80,17 @@
                     android:text="Data:"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#000000"
-                    android:textSize="30dp" />
+                    android:textSize="30sp"
+                    tools:ignore="HardcodedText" />
 
                 <EditText
                     android:id="@+id/etDataNascimento"
-                    android:layout_width="131dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignBottom="@+id/textView"
-                    android:layout_alignParentEnd="true"
-                    android:layout_below="@+id/etSenha"
-                    android:layout_toEndOf="@+id/textView"
                     android:layout_weight="1"
-                    android:background="@color/colorAccent"
                     android:ems="10"
-                    android:hint="dd/mm/aaaa"
                     android:inputType="date"
-                    android:textColorHint="?attr/colorControlNormal"
-                    android:textSize="20dp" />
+                    tools:ignore="InefficientWeight,LabelFor,NestedWeights" />
 
             </LinearLayout>
 
@@ -124,7 +101,8 @@
 
                 <RadioGroup
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    tools:ignore="UselessParent">
 
                     <TextView
                         android:id="@+id/textView11"
@@ -133,21 +111,24 @@
                         android:layout_weight="1"
                         android:text="Sexo:"
                         android:textColor="@android:color/black"
-                        android:textSize="30sp" />
+                        android:textSize="30sp"
+                        tools:ignore="HardcodedText" />
 
                     <RadioButton
                         android:id="@+id/rbMasculino"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Masculino" />
+                        android:text="Masculino"
+                        tools:ignore="HardcodedText" />
 
                     <RadioButton
                         android:id="@+id/rbFeminino"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Feminino" />
+                        android:text="Feminino"
+                        tools:ignore="HardcodedText" />
 
                 </RadioGroup>
 
@@ -169,36 +150,28 @@
 
                 <ImageView
                     android:id="@+id/Foto"
-                    android:layout_width="185dp"
-                    android:layout_height="185dp"
-                    android:layout_weight="0.83"
-                    app:srcCompat="@android:drawable/ic_menu_camera" />
+                    android:layout_width="179dp"
+                    android:layout_height="64dp"
+                    app:srcCompat="@android:drawable/ic_menu_camera"
+                    tools:ignore="ContentDescription" />
 
                 <Button
                     android:id="@+id/btFoto"
-                    android:layout_width="101dp"
+                    android:layout_width="107dp"
                     android:layout_height="wrap_content"
-                    android:background="@color/colorAccent"
-                    android:elevation="0dp"
+                    android:layout_weight="0.69"
                     android:text="Foto"
-                    android:textColor="@android:color/holo_red_dark" />
+                    tools:ignore="HardcodedText,InefficientWeight" />
+
             </LinearLayout>
 
             <Button
                 android:id="@+id/btCadastrar"
-                style="@android:style/Widget.Material.Button.Colored"
-                android:layout_width="140dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/rbMasculino"
-                android:layout_centerHorizontal="true"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="52dp"
-                android:background="@color/colorAccent"
-                android:elevation="0dp"
-                android:text="@string/cadastrar"
-                android:textColor="#fb0202"
-                android:textSize="20sp"
-                android:layout_weight="0.08" />
+                android:layout_weight="0.08"
+                android:text="Cadastrar"
+                tools:ignore="HardcodedText" />
         </LinearLayout>
     </ScrollView>
 

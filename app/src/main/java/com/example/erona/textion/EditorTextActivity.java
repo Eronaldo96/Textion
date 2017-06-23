@@ -49,7 +49,7 @@ public class EditorTextActivity extends AppCompatActivity {
         btHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent telaHome = new Intent(getApplicationContext(),HomePrincipalActivity.class);
+                Intent telaHome = new Intent(getApplicationContext(),HomeActivity.class);
                 startActivity(telaHome);
             }
         });

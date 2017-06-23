@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?attr/colorControlHighlight"
+    android:background="@android:color/white"
     android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -20,16 +20,19 @@
         android:layout_below="@+id/etTexto"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="106dp"
-        android:visibility="gone" />
+        android:visibility="gone"
+        tools:ignore="NotSibling" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="10.70">
+        android:layout_weight="10.70"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             android:visibility="visible">
 
@@ -44,7 +47,8 @@
                 android:background="@android:color/transparent"
                 android:text="Editor de texto"
                 android:textColor="@android:color/holo_red_dark"
-                android:textSize="50dp" />
+                android:textSize="50dp"
+                tools:ignore="HardcodedText,SpUsage" />
 
             <EditText
                 android:id="@+id/etTitulo"
@@ -54,7 +58,8 @@
                 android:ems="10"
                 android:hint="Titulo"
                 android:inputType="textPersonName"
-                android:textSize="25sp" />
+                android:textSize="25sp"
+                tools:ignore="HardcodedText" />
 
             <EditText
                 android:id="@+id/etTexto"
@@ -64,40 +69,41 @@
                 android:layout_below="@+id/textView7"
                 android:layout_weight="1"
                 android:hint="digite aqui"
-                android:textSize="25dp" />
-
-            <Button
-                android:id="@+id/btPublicar"
-                android:layout_width="175dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_toEndOf="@+id/btHome"
-                android:background="@color/colorAccent"
-                android:text="Publicar"
-                android:textSize="20sp" />
-
-            <Button
-                android:id="@+id/btSalvar"
-                android:layout_width="207dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignTop="@+id/btPublicar"
-                android:background="@color/colorAccent"
-                android:text="Salvar Rascunho"
-                android:textSize="20dp"
-                android:visibility="visible" />
-
-            <Button
-                android:id="@+id/btHome"
-                android:layout_width="139dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentStart="true"
-                android:background="@color/colorAccent"
-                android:text="Home"
-                android:textSize="20dp" />
+                android:textSize="25dp"
+                tools:ignore="HardcodedText,SpUsage" />
 
         </LinearLayout>
     </ScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="441dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_alignParentEnd="true">
+
+        <Button
+            android:id="@+id/btHome"
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            tools:ignore="ButtonStyle,HardcodedText" />
+
+        <Button
+            android:id="@+id/btPublicar"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:text="Publicar"
+            tools:ignore="ButtonStyle,HardcodedText" />
+
+        <Button
+            android:id="@+id/btSalvar"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:text="Rascunho"
+            tools:ignore="ButtonStyle,HardcodedText" />
+    </LinearLayout>
 
 </RelativeLayout>

@@ -19,7 +19,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class PublicacoesActivity extends AppCompatActivity {
+public class PublicaTextoActivity extends AppCompatActivity {
     public Button btHome;
     private ListView lvLista;
 
@@ -105,7 +105,7 @@ public class PublicacoesActivity extends AppCompatActivity {
         btHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent telaHome = new Intent(getApplicationContext(),HomePrincipalActivity.class);
+                Intent telaHome = new Intent(getApplicationContext(),HomeActivity.class);
                 startActivity(telaHome);
             }
         });

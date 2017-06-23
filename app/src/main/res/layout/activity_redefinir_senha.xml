@@ -12,7 +12,7 @@
         android:id="@+id/textView8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="    Redefinir Senha"
+        android:text="@string/redefinir_senha"
         android:textSize="40sp"
         tools:layout_editor_absoluteX="42dp"
         tools:layout_editor_absoluteY="16dp" />
@@ -22,8 +22,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Email:"
+        android:hint="Email"
         android:inputType="textEmailAddress"
+        tools:ignore="HardcodedText"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="85dp" />
 
@@ -33,12 +34,14 @@
         android:layout_height="wrap_content"
         android:text="Redefinir"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="128dp" />
+        tools:layout_editor_absoluteY="128dp"
+        tools:ignore="HardcodedText" />
 
     <Space
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.29" />
+        android:layout_weight="0.29"
+        tools:ignore="InefficientWeight" />
 
     <ProgressBar
         android:id="@+id/pbLoading"
